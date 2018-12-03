@@ -47120,7 +47120,7 @@ var AccountInfoComponent = function (_React$Component) {
                                 _react2.default.createElement(
                                     "div",
                                     { className: "card-counter danger" },
-                                    _react2.default.createElement("i", { className: "fa fa-inr" }),
+                                    _react2.default.createElement("i", { className: "fa fa-barcode" }),
                                     _react2.default.createElement(
                                         "span",
                                         { className: "count-numbers" },
@@ -47139,7 +47139,7 @@ var AccountInfoComponent = function (_React$Component) {
                                 _react2.default.createElement(
                                     "div",
                                     { className: "card-counter success" },
-                                    _react2.default.createElement("i", { className: "fa fa-credit-card custom" }),
+                                    _react2.default.createElement("i", { className: "fa fa-money" }),
                                     _react2.default.createElement(
                                         "span",
                                         { className: "count-numbers" },

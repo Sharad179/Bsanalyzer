@@ -34,7 +34,7 @@ export default class AccountInfoComponent extends React.Component {
 
                             <div className="col-md-4">
                                 <div className="card-counter danger">
-                                    <i className="fa fa-inr"></i>
+                                    <i className="fa fa-barcode"></i>
                                     <span className="count-numbers">{this.state.micrcode}</span>
                                     <span className="count-name">MICR Code</span>
                                 </div>
@@ -42,7 +42,7 @@ export default class AccountInfoComponent extends React.Component {
 
                             <div className="col-md-4">
                                 <div className="card-counter success">
-                                    <i className="fa fa-credit-card custom"></i>
+                                    <i className="fa fa-money"></i>
                                     <span className="count-numbers">{this.state.neftcode}</span>
                                     <span className="count-name">NEFT Code</span>
                                 </div>
