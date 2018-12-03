@@ -11,6 +11,7 @@ import TopNav from '../TopNav/TopNav';
 import Footer from '../Footer/Footer';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'font-awesome/css/font-awesome.css';
 
 
 export default class MainPage extends React.Component {
