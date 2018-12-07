@@ -2,7 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './UploadPage.css';
 import { withRouter } from 'react-router-dom';
-import Background from '../../images/Background_banner.jpeg'
+import Background from '../../images/Background_banner.jpeg';
+
 
 
 class UploadPage extends React.Component {
@@ -52,7 +53,7 @@ class UploadPage extends React.Component {
             <div>
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="jumbotron jumbotron-fluid" style={{ backgroundImage: "url(" + Background + ")", backgroundRepeat: "no-repeat", backgroundSize: "100%", height: "800px" }}>
+                        <div className="jumbotron jumbotron-fluid" style={{ backgroundImage: "url(" + Background + ")", backgroundRepeat: "no-repeat", backgroundSize: "100% 100%", height: "735px", width:"100%",marginBottom:'0px' }}>
                             <div className="jumbotron jumbotron-fluid" style={{ background: "none", textAlign:"center",color: "#fff", border: "2px dashed #fff", marginTop:"10%",backgroundColor: "rgba(255,255,255,.2)" }}>
 
                                 <form>

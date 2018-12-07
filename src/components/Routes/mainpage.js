@@ -8,10 +8,12 @@ import {
 import UploadPage from '../UploadPage/UploadPage';
 import ResultPage from '../ResultPage/ResultPage';
 import TopNav from '../TopNav/TopNav';
-import Footer from '../Footer/Footer';
+
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.css';
+import 'mdbootstrap/css/mdb.min.css';
+import Footer from '../Footer/Footer';
 
 
 export default class MainPage extends React.Component {
@@ -21,7 +23,7 @@ export default class MainPage extends React.Component {
                 
                 <Route path="/result" component={ResultPage} />
                 <Route path="/upload" component={UploadPage} />
-                
+                <Footer></Footer>
             </div>
         )
     }

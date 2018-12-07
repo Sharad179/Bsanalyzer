@@ -1,9 +1,10 @@
 import React from 'react';
 // import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
+import '../Footer/Footer.css';
 
 
-class Footer extends React.Component {
+export default class Footer extends React.Component {
 
     render() {
         const { user, users } = this.props;
@@ -18,13 +19,4 @@ class Footer extends React.Component {
     }
 }
 
-function mapStateToProps(state) {
-    const { users, authentication } = state;
-    const { user } = authentication;
-    return {
-        user,
-        users
-    };
-}
 
-export default connect(mapStateToProps)(Footer);;

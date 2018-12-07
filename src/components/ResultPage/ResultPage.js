@@ -28,10 +28,10 @@ class ResultPage extends React.Component {
 
             <div>
                 <HeaderComponent header="Account Summary"></HeaderComponent>
-                <div className="row" style={{ marginTop: "40px" }}>
+                
                     <AccountInfoComponent accountnumber={this.state.accountNumber}></AccountInfoComponent>
                     <AccountDetailsComponent></AccountDetailsComponent>
-                </div>
+                
 
             </div>
         );
