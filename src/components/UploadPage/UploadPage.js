@@ -28,9 +28,8 @@ class UploadPage extends React.Component {
             body: formData 
         }).then(function (res) {
             res.text().then(function(data) {
-                localStorage.setItem('accountNumber',JSON.parse(data).account_number);
-                console.log(JSON.parse(data).account_number);
-                 window.location.href = "/result";
+                localStorage.setItem('accountNumber',JSON.parse(data).account_no);
+                window.location.href = "/result";
               });
             // window.location.href = "/result";
         }, function (e) {
