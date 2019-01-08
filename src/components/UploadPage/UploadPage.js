@@ -23,7 +23,7 @@ class UploadPage extends React.Component {
         formData.append('file', input.files[0]);
         document.body.style.backgroundColor = "#262626";
         document.getElementById('app').innerHTML = "<div class='ring'>Loading<span class = 'loading'></span></div>";
-        fetch('http://13.127.164.129:5000/statement', { 
+        fetch('http://13.233.43.103:5000/statement', { 
             method: 'POST',
             body: formData 
         }).then(function (res) {
