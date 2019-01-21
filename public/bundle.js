@@ -35599,6 +35599,7 @@ var UploadPage = function (_React$Component) {
         // reset login status
         var _this = _possibleConstructorReturn(this, (UploadPage.__proto__ || Object.getPrototypeOf(UploadPage)).call(this, props));
 
+        _this.state = { bank_name: "HDFC" };
         _this.handleChange = _this.handleChange.bind(_this);
         _this.handleSubmit = _this.handleSubmit.bind(_this);
         _this.handleUpload = _this.handleUpload.bind(_this);
@@ -35614,7 +35615,7 @@ var UploadPage = function (_React$Component) {
             formData.append('file', input.files[0]);
             document.body.style.backgroundColor = "#262626";
             document.getElementById('app').innerHTML = "<div class='ring'>Loading<span class = 'loading'></span></div>";
-            fetch('http://13.233.43.103:5000/statement', {
+            fetch('http://13.233.43.103:5000/upload/statement/' + this.state.bank_name, {
                 method: 'POST',
                 body: formData
             }).then(function (res) {
@@ -35656,6 +35657,88 @@ var UploadPage = function (_React$Component) {
                         _react2.default.createElement(
                             'div',
                             { className: 'jumbotron jumbotron-fluid', style: { backgroundImage: "url(" + _Background_banner2.default + ")", backgroundRepeat: "no-repeat", backgroundSize: "100% 100%", height: "735px", width: "100%", marginBottom: '0px' } },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'row' },
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'col-md-4 offset-md-4' },
+                                    _react2.default.createElement(
+                                        'label',
+                                        { style: { color: "white", fontSize: "20px", fontWeight: 600 } },
+                                        'Select Bank:'
+                                    ),
+                                    _react2.default.createElement(
+                                        'select',
+                                        { className: 'form-control', name: 'bank_name', value: this.state.bank_name, onChange: this.handleChange },
+                                        _react2.default.createElement(
+                                            'option',
+                                            { value: 'HDFC' },
+                                            'HDFC'
+                                        ),
+                                        _react2.default.createElement(
+                                            'option',
+                                            { value: 'SBI' },
+                                            'SBI'
+                                        ),
+                                        _react2.default.createElement(
+                                            'option',
+                                            { value: 'AXIS' },
+                                            'AXIS'
+                                        ),
+                                        _react2.default.createElement(
+                                            'option',
+                                            { value: 'KOTAK' },
+                                            'KOTAK'
+                                        ),
+                                        _react2.default.createElement(
+                                            'option',
+                                            { value: 'ICICI' },
+                                            'ICICI'
+                                        ),
+                                        _react2.default.createElement(
+                                            'option',
+                                            { value: 'PMCB' },
+                                            'PMCB'
+                                        ),
+                                        _react2.default.createElement(
+                                            'option',
+                                            { value: 'CentralBank' },
+                                            'Central Bank Of India'
+                                        ),
+                                        _react2.default.createElement(
+                                            'option',
+                                            { value: 'GreaterBombayBank' },
+                                            'Greater Bombay Bank'
+                                        ),
+                                        _react2.default.createElement(
+                                            'option',
+                                            { value: 'SaraswatBank' },
+                                            'Saraswat Bank'
+                                        ),
+                                        _react2.default.createElement(
+                                            'option',
+                                            { value: 'UnionBank' },
+                                            'Union Bank Of India'
+                                        ),
+                                        _react2.default.createElement(
+                                            'option',
+                                            { value: 'Model_Co_Bank' },
+                                            'Model Co Bank'
+                                        ),
+                                        _react2.default.createElement(
+                                            'option',
+                                            { value: '\u201CTJSB' },
+                                            'TJSB'
+                                        ),
+                                        _react2.default.createElement(
+                                            'option',
+                                            { value: 'Kalyan_Janata' },
+                                            'Kalyan Janata'
+                                        )
+                                    )
+                                )
+                            ),
                             _react2.default.createElement(
                                 'div',
                                 { className: 'jumbotron jumbotron-fluid', style: { background: "none", textAlign: "center", color: "#fff", border: "2px dashed #fff", marginTop: "10%", backgroundColor: "rgba(255,255,255,.2)" } },
